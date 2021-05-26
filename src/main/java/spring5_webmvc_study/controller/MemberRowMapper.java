@@ -11,8 +11,8 @@ public class MemberRowMapper implements RowMapper<Member> {
 	@Override
 	public Member mapRow(ResultSet rs, int rowNum) throws SQLException {
 		Member member = new Member(rs.getString("email")
-														  , rs.getString("name")
 														  , rs.getString("password")
+														  , rs.getString("name")
 														  , rs.getTimestamp("regdate").toLocalDateTime());
 		member.setId(rs.getLong("id"));
 		return member;
