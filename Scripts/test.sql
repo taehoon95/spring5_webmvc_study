@@ -1,6 +1,6 @@
 select * from member;
 
-delete from `member` where ID < 67;
+delete from `member` where ID > 75;
 
 select ID,EMAIL,PASSWORD,NAME,REGDATE from member;
 

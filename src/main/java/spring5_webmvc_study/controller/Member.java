@@ -12,7 +12,7 @@ public class Member {
 	private String email;
 	private String password;
 	private String name;
-	@JsonFormat(pattern = "yyyyMMddHHmmss")
+//	@JsonFormat(pattern = "yyyyMMddHHmmss")
 	private LocalDateTime registerDateTime;
 
 	public Member(String email, String password, String name, LocalDateTime registerDateTime) {
