@@ -16,7 +16,7 @@ public class MemberDetailController {
 	
 	@GetMapping("/members/{id}")
 	public ModelAndView detail(@PathVariable("id") Long memId) {
-		Member member = memberDao.selelctById(memId);
+		Member member = memberDao.selectById(memId);
 		if(member == null) {
 			throw new MemberNotFoundException();
 		}

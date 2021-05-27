@@ -97,7 +97,7 @@ public class MemberDao {
 		return jdbcTemplate.query(sql, new MemberRowMapper(),from,to);
 	}
 	
-	public Member selelctById(Long memId) {
+	public Member selectById(Long memId) {
 		String sql = "select * from member where id = ?";
 		List<Member> results = jdbcTemplate.query(sql,new MemberRowMapper(), memId);
 		return results.isEmpty() ? null : results.get(0);
